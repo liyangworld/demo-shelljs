@@ -1,10 +1,11 @@
 {
   "name": "demo-shelljs",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "deploy": "npm run build && node scripts/deploy.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -23,6 +24,7 @@
     "eslint-plugin-vue": "^5.0.0",
     "less": "^3.0.4",
     "less-loader": "^5.0.0",
+    "shelljs": "^0.8.3",
     "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
